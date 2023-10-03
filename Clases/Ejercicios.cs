@@ -16,8 +16,8 @@ namespace EjerciciosED_03_10_23.Clases
 
         public void Ejercicio2()
         {
-            int[] numeros = { };
-            for (int i = 0; i < 5; i++)
+            int[] numeros = new int[5];
+            for (int i = 0; i < numeros.Length; i++)
             {
                 Console.WriteLine("dame un numero");
                 numeros[i] = Convert.ToInt32(Console.ReadLine());
@@ -27,7 +27,7 @@ namespace EjerciciosED_03_10_23.Clases
 
         public void Ejercicio3()
         {
-            int[] numerosMedia = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            
         }
     }
 }
