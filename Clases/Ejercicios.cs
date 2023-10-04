@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -40,20 +41,18 @@ namespace EjerciciosED_03_10_23.Clases
 
         }
 
-        //le falta
+        
         public void Ejercicio4(int tamaño, int numero)
         {
             int[] numerosMultiplos = new int[tamaño];
 
-            for(int i = 0; i < numerosMultiplos.Length;)
+            for(int i = 1; i <= tamaño ;i++)
             {
-                if (numero % i == 0)
-                {
-                    i++;
-                    numerosMultiplos[i] = i;
-                }
+
+                Console.WriteLine(numero *i);
+                
             }
-            Console.WriteLine(string.Join(", ", numerosMultiplos));
+           
         }
 
         public void Ejercicio5(int tamaño)
@@ -67,11 +66,14 @@ namespace EjerciciosED_03_10_23.Clases
                 nombresPersonas[i] = Console.ReadLine();
 
                 longitud[i] = nombresPersonas[i].Length;
+                Console.WriteLine($"El nombre {nombresPersonas[i]} toma {longitud[i]} espacios");
             }
+            /*
             for (int i = 0; i < tamaño; i++)
             {
                 Console.WriteLine($"El nombre {nombresPersonas[i]} toma {longitud[i]} espacios");
             }
+            */
         }
     }
 }
