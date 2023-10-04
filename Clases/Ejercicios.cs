@@ -40,6 +40,7 @@ namespace EjerciciosED_03_10_23.Clases
 
         }
 
+        //le falta
         public void Ejercicio4(int tamaño, int numero)
         {
             int[] numerosMultiplos = new int[tamaño];
@@ -53,6 +54,24 @@ namespace EjerciciosED_03_10_23.Clases
                 }
             }
             Console.WriteLine(string.Join(", ", numerosMultiplos));
+        }
+
+        public void Ejercicio5(int tamaño)
+        {
+            string[] nombresPersonas = new string[tamaño];
+            int[] longitud = new int[tamaño];
+
+            for(int i= 0; i < tamaño; i++)
+            {
+                Console.WriteLine("dame el nombre de la persona");
+                nombresPersonas[i] = Console.ReadLine();
+
+                longitud[i] = nombresPersonas[i].Length;
+            }
+            for (int i = 0; i < tamaño; i++)
+            {
+                Console.WriteLine($"El nombre {nombresPersonas[i]} toma {longitud[i]} espacios");
+            }
         }
     }
 }
