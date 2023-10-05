@@ -22,11 +22,22 @@ namespace EjerciciosED_03_10_23
             //Ejercicios ejercicios4 = new Ejercicios();
             //ejercicios4.Ejercicio4(tamaño, numero);
 
-            Console.WriteLine("dame el tamaño del arreglo");
-            int tamaño = Convert.ToInt32(Console.ReadLine());
-            Ejercicios ejercicios5 = new Ejercicios();
-            ejercicios5.Ejercicio5(tamaño);
+            //Console.WriteLine("dame el tamaño del arreglo");
+            //int tamaño = Convert.ToInt32(Console.ReadLine());
+            //Ejercicios ejercicios5 = new Ejercicios();
+            //ejercicios5.Ejercicio5(tamaño);
 
+            /*    ###   EJERCICIOS 04-10-23    ###   */
+
+            //Console.WriteLine("dame el tamaño del arreglo");
+            //int tamaño = Convert.ToInt32(Console.ReadLine());
+            //Ejercicios ejercicios6 = new Ejercicios();
+            //ejercicios6.Ejercicio6(tamaño);
+
+            Console.WriteLine("dame un numero del 1 al 10");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Ejercicios ejercicios7 = new Ejercicios();
+            ejercicios7.Ejercicio7(numero);
         }
     }
 }

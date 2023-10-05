@@ -75,5 +75,59 @@ namespace EjerciciosED_03_10_23.Clases
             }
             */
         }
+
+
+
+
+        /*   ###   EJERCICIOS 04-10-23   ###    */
+
+
+
+        public void Ejercicio6(int tamaño)
+        {
+            int[] array1 = new int[tamaño];
+            int[] array2 = new int[tamaño];
+            int[] sumaArreglos = new int[tamaño]; 
+            for (int i =0; i < tamaño; i++)
+            {
+                Console.WriteLine($"dame el valor de la posicion {i} en el arreglo 1");
+                array1[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"dame el valor de la posicion {i} en el arreglo 2");
+                array2[i] = Convert.ToInt32(Console.ReadLine());
+                sumaArreglos[i] = array1[i] + array2[i];
+            }
+            for (int i = 0; i < tamaño; i++)
+            {
+                Console.WriteLine($"arreglo1 posicion {i} + arreglo2 posicion {i} = {sumaArreglos[i]}");
+                
+            }
+        }
+
+        public void Ejercicio7(int numero)
+        {
+            /*if( numero < 0 && numero>10)
+            {
+                int i = 0;
+                while (numeros[i] != numero)
+                {
+                    i++;
+                }
+                Console.WriteLine($"el numero esta en la pocision {i} del array");
+            }
+            Console.WriteLine("no es un numero valido");*/
+            int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 4, 9, 10 };
+            for (int i= 0; i< 10; i++)
+            {
+                if (numeros[i] == numero)
+                {
+                    Console.WriteLine($"{numero} esta en la posicion {i}");
+                }
+            }
+        }
+
+        public void Ejercicio8()
+        {
+
+        }
     }
 }
