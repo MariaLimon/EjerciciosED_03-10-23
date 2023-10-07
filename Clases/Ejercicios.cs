@@ -149,18 +149,22 @@ namespace EjerciciosED_03_10_23.Clases
                 Console.WriteLine("dame los id de la clase de analisis");
                 analisis[i] = Convert.ToInt32(Console.ReadLine());
             }
-            if(tamañoAlgebra < tamañoAnalisis)
-            {
-                coincidenciasAlumnos = new int[tamañoAnalisis];
+            
+        }
 
-            }
-            else
+        public void Ejercicio9(int tamaño)
+        {
+            
+            int[] arrayNumeros = new int[tamaño];
+
+            for (int i = 0; i < tamaño; i++)
             {
-                coincidenciasAlumnos = new int[tamañoAlgebra];
+                Console.WriteLine($"dame el valor de la posicion {i} en el arreglo");
+                arrayNumeros[i] = Convert.ToInt32(Console.ReadLine());
             }
         }
 
-        public void Ejercicio9()
+        public void Ejercicio10()
         {
 
         }
