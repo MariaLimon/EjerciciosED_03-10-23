@@ -116,16 +116,51 @@ namespace EjerciciosED_03_10_23.Clases
             }
             Console.WriteLine("no es un numero valido");*/
             int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 4, 9, 10 };
-            for (int i= 0; i< 10; i++)
+            if(numero <= 0 || numero > 10)
             {
-                if (numeros[i] == numero)
+                Console.WriteLine("el numero no es valido");
+            }
+            else
+            {
+                for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine($"{numero} esta en la posicion {i}");
+                    if (numeros[i] == numero)
+                    {
+                        Console.WriteLine($"{numero} esta en la posicion {i}");
+                    }
                 }
+            }
+            
+        }
+        //falta
+        public void Ejercicio8(int tamañoAlgebra, int tamañoAnalisis)
+        {
+            int[] algebra = new int[tamañoAlgebra];
+            int[] analisis = new int[tamañoAnalisis];
+            int[] coincidenciasAlumnos;
+
+            for (int i = 0; i < tamañoAlgebra; i++)
+            {
+                Console.WriteLine("dame los id de la clase de algebra");
+                algebra[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < tamañoAnalisis; i++)
+            {
+                Console.WriteLine("dame los id de la clase de analisis");
+                analisis[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            if(tamañoAlgebra < tamañoAnalisis)
+            {
+                coincidenciasAlumnos = new int[tamañoAnalisis];
+
+            }
+            else
+            {
+                coincidenciasAlumnos = new int[tamañoAlgebra];
             }
         }
 
-        public void Ejercicio8()
+        public void Ejercicio9()
         {
 
         }

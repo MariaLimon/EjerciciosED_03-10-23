@@ -38,6 +38,12 @@ namespace EjerciciosED_03_10_23
             int numero = Convert.ToInt32(Console.ReadLine());
             Ejercicios ejercicios7 = new Ejercicios();
             ejercicios7.Ejercicio7(numero);
+
+            //Console.WriteLine("dame la cantidad de alumnos que hay en la clase de algebra");
+            //int tamañoAlgebra = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("dame la cantidad de alumnos que hay en la clase de analisis");
+            //int tamañoAnalisis = Convert.ToInt32(Console.ReadLine());
+
         }
     }
 }
