@@ -34,16 +34,23 @@ namespace EjerciciosED_03_10_23
             //Ejercicios ejercicios6 = new Ejercicios();
             //ejercicios6.Ejercicio6(tamaño);
 
-            Console.WriteLine("dame un numero del 1 al 10");
-            int numero = Convert.ToInt32(Console.ReadLine());
-            Ejercicios ejercicios7 = new Ejercicios();
-            ejercicios7.Ejercicio7(numero);
+            //Console.WriteLine("dame un numero del 1 al 10");
+            //int numero = Convert.ToInt32(Console.ReadLine());
+            //Ejercicios ejercicios7 = new Ejercicios();
+            //ejercicios7.Ejercicio7(numero);
 
             //Console.WriteLine("dame la cantidad de alumnos que hay en la clase de algebra");
             //int tamañoAlgebra = Convert.ToInt32(Console.ReadLine());
             //Console.WriteLine("dame la cantidad de alumnos que hay en la clase de analisis");
             //int tamañoAnalisis = Convert.ToInt32(Console.ReadLine());
+            //Ejercicios ejercicio8 = new Ejercicios();
+            //ejercicio8.Ejercicio8(tamañoAlgebra,tamañoAnalisis);
 
+
+            Console.WriteLine("dame el tamaño del arreglo");
+            int tamaño = Convert.ToInt32(Console.ReadLine());
+            Ejercicios ejercicio9 = new Ejercicios();
+            ejercicio9.Ejercicio9(tamaño);
         }
     }
 }

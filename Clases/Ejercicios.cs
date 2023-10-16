@@ -132,13 +132,16 @@ namespace EjerciciosED_03_10_23.Clases
             }
             
         }
-        //falta
+      
         public void Ejercicio8(int tamañoAlgebra, int tamañoAnalisis)
         {
             int[] algebra = new int[tamañoAlgebra];
             int[] analisis = new int[tamañoAnalisis];
-            int[] coincidenciasAlumnos;
-
+            int[] coincidenciasAlumnos = new int[tamañoAlgebra];
+            if (tamañoAlgebra < tamañoAnalisis)
+            { 
+                coincidenciasAlumnos = new int[tamañoAnalisis];
+            }
             for (int i = 0; i < tamañoAlgebra; i++)
             {
                 Console.WriteLine("dame los id de la clase de algebra");
@@ -149,18 +152,49 @@ namespace EjerciciosED_03_10_23.Clases
                 Console.WriteLine("dame los id de la clase de analisis");
                 analisis[i] = Convert.ToInt32(Console.ReadLine());
             }
-            
+            int cantidadCoincidencias = 0;
+            for (int i = 0; i < tamañoAlgebra; i++)
+            {
+                for (int j = 0; j < tamañoAnalisis; j++)
+                {
+                    if (algebra[i] == analisis[j])
+                    {
+                        coincidenciasAlumnos[cantidadCoincidencias] = algebra[i];
+                        cantidadCoincidencias++;
+                    }
+                }
+            }
+
+            Console.WriteLine("los alumnos inscritos en ambas asignaturas son:");
+            for (int i = 0; i < cantidadCoincidencias; i++)
+            {
+                Console.WriteLine(coincidenciasAlumnos[i] + " ");
+            }
+
         }
 
         public void Ejercicio9(int tamaño)
         {
             
             int[] arrayNumeros = new int[tamaño];
-
+            int numero;
             for (int i = 0; i < tamaño; i++)
             {
                 Console.WriteLine($"dame el valor de la posicion {i} en el arreglo");
-                arrayNumeros[i] = Convert.ToInt32(Console.ReadLine());
+                numero = Convert.ToInt32(Console.ReadLine());
+                bool numeroRepetido = false;
+
+                for (int j=0; i < j; j++)
+                {
+                    if (numero == arrayNumeros[j])
+                    {
+                        numeroRepetido = true;
+                        Console.WriteLine("ese numero ya esta en el array");
+                        break;
+                        
+                    }
+                }
+                
             }
         }
 
