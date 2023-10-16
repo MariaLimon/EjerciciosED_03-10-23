@@ -182,13 +182,13 @@ namespace EjerciciosED_03_10_23.Clases
             {
                 Console.WriteLine($"dame el valor de la posicion {i} en el arreglo");
                 numero = Convert.ToInt32(Console.ReadLine());
-                bool numeroRepetido = false;
+                
 
                 for (int j=0; i < j; j++)
                 {
                     if (numero == arrayNumeros[j])
                     {
-                        numeroRepetido = true;
+                        
                         Console.WriteLine("ese numero ya esta en el array");
                         break;
                         
@@ -198,9 +198,9 @@ namespace EjerciciosED_03_10_23.Clases
             }
         }
 
-        public void Ejercicio10()
+        public void Ejercicio10(int tamaño)
         {
-
+            
         }
     }
 }
